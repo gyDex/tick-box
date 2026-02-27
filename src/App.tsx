@@ -6,7 +6,7 @@ import { MenuProvider } from "./context/MenuContext";
 function App() {
   return (
     <MenuProvider>
-      <BrowserRouter>
+      <BrowserRouter  basename="/tick-box">
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/menu" element={<MenuPage/>} />
