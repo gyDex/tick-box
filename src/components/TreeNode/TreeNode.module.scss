@@ -63,8 +63,7 @@
     &__checkbox:checked + &__custom-checkbox::after {
         content: "";
         position: absolute;
-        top: 2px;
-        left: 6px;
+        left: 5px;
         width: 6px;
         height: 10px;
         border: solid white;
