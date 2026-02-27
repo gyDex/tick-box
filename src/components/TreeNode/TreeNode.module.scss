@@ -1,0 +1,74 @@
+.menu {
+  padding: 20px;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+  }
+
+  &__item:not(:first-child) {
+    margin-top: 15px;
+  }
+
+  &__children {
+    margin-left: 30px;
+  }
+
+  &__item-name {
+    font-weight: 600;
+  }
+  
+  &__item-label {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__item-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__item-content {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__item-value {
+    color: rgb(224, 224, 224);
+  }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__custom-checkbox {
+        width: 18px;
+        height: 18px;
+        border: 2px solid #667eea;
+        border-radius: 6px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s;
+        border-color: #6f89ff;
+    }
+
+    &__checkbox:checked + &__custom-checkbox {
+        background: #667eea;
+    }
+
+    &__checkbox:checked + &__custom-checkbox::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 6px;
+        width: 6px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+}

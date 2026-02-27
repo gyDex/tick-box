@@ -1,0 +1,27 @@
+.sidebar {
+    border: 1px solid black;
+    border-top: none;
+    padding: 20px;
+    min-width: 300px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__menu-btn {
+        transition: 0.3s color font-weight ease;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+        &__menu-item:hover > &__menu-btn
+        {
+            color: #667eea;
+            font-weight: 700;
+        }
+    }
+
+}
